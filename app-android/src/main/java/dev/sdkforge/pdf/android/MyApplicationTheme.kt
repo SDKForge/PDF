@@ -1,4 +1,4 @@
-package dev.sdkforge.template.android
+package dev.sdkforge.pdf.android
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape

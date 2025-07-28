@@ -24,5 +24,5 @@ kotlin {
 }
 
 android {
-    namespace = "dev.sdkforge.template.ui"
+    namespace = "dev.sdkforge.pdf.ui"
 }

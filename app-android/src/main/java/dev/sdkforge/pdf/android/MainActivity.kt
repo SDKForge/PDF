@@ -1,4 +1,4 @@
-package dev.sdkforge.template.android
+package dev.sdkforge.pdf.android
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -14,7 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import dev.sdkforge.template.core.currentPlatform
+import dev.sdkforge.pdf.core.currentPlatform
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(
