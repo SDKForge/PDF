@@ -14,7 +14,8 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                // put your multiplatform dependencies here
+                implementation(compose.foundation)
+                implementation(compose.material3)
             }
         }
         commonTest {

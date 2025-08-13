@@ -12,6 +12,7 @@ kotlin {
         commonMain {
             dependencies {
                 api(projects.shared)
+                api(projects.sharedUi)
 
                 api(compose.foundation)
                 api(compose.material3)
