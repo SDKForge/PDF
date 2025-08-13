@@ -33,7 +33,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SDKForgeTemplate"
+rootProject.name = "SDKForge-PDF"
 
 include(":app-android")
 include(":app-shared")
