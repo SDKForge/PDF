@@ -39,6 +39,7 @@ include(":app-android")
 include(":app-shared")
 include(":shared")
 include(":shared-core")
+include(":shared-ui")
 
 include(":internal-ktlint")
 // uncomment if it's needed for development
