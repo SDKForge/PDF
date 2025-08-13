@@ -1,4 +1,4 @@
-package dev.sdkforge.template
+package dev.sdkforge.pdf
 
 import dev.sdkforge.template.Library.VERSION
 

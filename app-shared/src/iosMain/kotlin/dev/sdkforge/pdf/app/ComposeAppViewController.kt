@@ -1,4 +1,4 @@
-package dev.sdkforge.template.app
+package dev.sdkforge.pdf.app
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Modifier
