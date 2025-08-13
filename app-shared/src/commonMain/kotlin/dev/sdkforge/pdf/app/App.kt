@@ -2,17 +2,20 @@ package dev.sdkforge.pdf.app
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import dev.sdkforge.pdf.core.currentPlatform
+import dev.sdkforge.pdf.ui.PDFDocument
+import dev.sdkforge.pdf.ui.PDFRenderView
 
 @Composable
 fun App(
+    document: PDFDocument,
     modifier: Modifier = Modifier,
 ) = ApplicationTheme {
     Surface(
@@ -20,17 +23,15 @@ fun App(
         color = MaterialTheme.colorScheme.background,
     ) {
         Column(
-            verticalArrangement = Arrangement.spacedBy(
-                space = 8.dp,
-                alignment = Alignment.CenterVertically,
-            ),
+            modifier = Modifier
+                .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Text(
-                text = "Platform name: ${currentPlatform.name}",
-            )
-            Text(
-                text = "Platform version: ${currentPlatform.version}",
+            PDFRenderView(
+                document = document,
+                modifier = Modifier
+                    .fillMaxSize(),
             )
         }
     }
