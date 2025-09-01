@@ -1,6 +1,6 @@
 package dev.sdkforge.pdf
 
-import dev.sdkforge.template.Library.VERSION
+import dev.sdkforge.pdf.Library.VERSION
 
 /**
  * Library metadata and version information.
