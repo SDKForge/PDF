@@ -16,6 +16,31 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 
+/**
+ * A composable that renders all pages of a PDF document in a scrollable list.
+ *
+ * This composable displays all pages of a PDF document vertically in a scrollable column.
+ * Each page is rendered using [PDFRenderPageView] with proper spacing and layout.
+ *
+ * ## Features
+ *
+ * - **Lazy loading**: Pages are rendered on-demand as they become visible
+ * - **Responsive layout**: Pages scale to fit the available width
+ * - **Loading states**: Shows progress indicators while pages are being rendered
+ * - **Memory efficient**: Uses Compose's remember with key for proper page caching
+ *
+ * ## Usage
+ *
+ * ```kotlin
+ * PDFRenderView(
+ *     document = pdfDocument,
+ *     modifier = Modifier.fillMaxSize()
+ * )
+ * ```
+ *
+ * @param document The PDF document to render
+ * @param modifier Optional modifier to apply to the composable
+ */
 @Composable
 fun PDFRenderView(
     document: PDFDocument,
@@ -38,6 +63,32 @@ fun PDFRenderView(
     }
 }
 
+/**
+ * A composable that renders a single PDF page.
+ *
+ * This composable displays a single PDF page with proper scaling and layout.
+ * It handles both loading states (showing a progress indicator) and rendered states
+ * (showing the actual page content).
+ *
+ * ## Features
+ *
+ * - **Loading state**: Shows a circular progress indicator while the page is being rendered
+ * - **Content scaling**: Pages are scaled to fill the available width while maintaining aspect ratio
+ * - **Visual feedback**: Red border around the page area for debugging/visual clarity
+ * - **Background**: White background to ensure proper contrast
+ *
+ * ## Usage
+ *
+ * ```kotlin
+ * PDFRenderPageView(
+ *     page = pdfPage,
+ *     modifier = Modifier.fillMaxWidth()
+ * )
+ * ```
+ *
+ * @param page The PDF page to render, or `null` if the page is still loading
+ * @param modifier Optional modifier to apply to the composable
+ */
 @Composable
 fun PDFRenderPageView(
     page: PDFPage?,
