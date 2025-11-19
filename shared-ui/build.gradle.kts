@@ -11,6 +11,10 @@ plugins {
 }
 
 kotlin {
+    androidLibrary {
+        namespace = "dev.sdkforge.pdf.ui"
+    }
+
     sourceSets {
         commonMain {
             dependencies {
@@ -24,8 +28,4 @@ kotlin {
             }
         }
     }
-}
-
-android {
-    namespace = "dev.sdkforge.pdf.ui"
 }
