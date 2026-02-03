@@ -1,0 +1,45 @@
+// Klib ABI Dump
+// Targets: [iosArm64, iosSimulatorArm64, iosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <dev.sdkforge.pdf:shared-ui>
+final class dev.sdkforge.pdf.ui/PDFDocument { // dev.sdkforge.pdf.ui/PDFDocument|null[0]
+    constructor <init>(kotlin/String) // dev.sdkforge.pdf.ui/PDFDocument.<init>|<init>(kotlin.String){}[0]
+    constructor <init>(platform.PDFKit/PDFDocument) // dev.sdkforge.pdf.ui/PDFDocument.<init>|<init>(platform.PDFKit.PDFDocument){}[0]
+
+    final val pageCount // dev.sdkforge.pdf.ui/PDFDocument.pageCount|{}pageCount[0]
+        final fun <get-pageCount>(): kotlin/Int // dev.sdkforge.pdf.ui/PDFDocument.pageCount.<get-pageCount>|<get-pageCount>(){}[0]
+
+    final fun getPageAt(kotlin/Int): dev.sdkforge.pdf.ui/PDFPage? // dev.sdkforge.pdf.ui/PDFDocument.getPageAt|getPageAt(kotlin.Int){}[0]
+}
+
+final class dev.sdkforge.pdf.ui/PDFPage { // dev.sdkforge.pdf.ui/PDFPage|null[0]
+    constructor <init>(platform.PDFKit/PDFPage) // dev.sdkforge.pdf.ui/PDFPage.<init>|<init>(platform.PDFKit.PDFPage){}[0]
+
+    final val pageInfo // dev.sdkforge.pdf.ui/PDFPage.pageInfo|{}pageInfo[0]
+        final fun <get-pageInfo>(): dev.sdkforge.pdf.ui/PDFPageInfo // dev.sdkforge.pdf.ui/PDFPage.pageInfo.<get-pageInfo>|<get-pageInfo>(){}[0]
+}
+
+final class dev.sdkforge.pdf.ui/PDFPageInfo { // dev.sdkforge.pdf.ui/PDFPageInfo|null[0]
+    constructor <init>(platform.PDFKit/PDFPage) // dev.sdkforge.pdf.ui/PDFPageInfo.<init>|<init>(platform.PDFKit.PDFPage){}[0]
+
+    final val pageHeight // dev.sdkforge.pdf.ui/PDFPageInfo.pageHeight|{}pageHeight[0]
+        final fun <get-pageHeight>(): kotlin/Int // dev.sdkforge.pdf.ui/PDFPageInfo.pageHeight.<get-pageHeight>|<get-pageHeight>(){}[0]
+    final val pageWidth // dev.sdkforge.pdf.ui/PDFPageInfo.pageWidth|{}pageWidth[0]
+        final fun <get-pageWidth>(): kotlin/Int // dev.sdkforge.pdf.ui/PDFPageInfo.pageWidth.<get-pageWidth>|<get-pageWidth>(){}[0]
+    final val painter // dev.sdkforge.pdf.ui/PDFPageInfo.painter|{}painter[0]
+        final fun <get-painter>(): androidx.compose.ui.graphics.painter/Painter // dev.sdkforge.pdf.ui/PDFPageInfo.painter.<get-painter>|<get-painter>(){}[0]
+}
+
+final val dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFDocument$stableprop // dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFDocument$stableprop|#static{}dev_sdkforge_pdf_ui_PDFDocument$stableprop[0]
+final val dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFPage$stableprop // dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFPage$stableprop|#static{}dev_sdkforge_pdf_ui_PDFPage$stableprop[0]
+final val dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFPageInfo$stableprop // dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFPageInfo$stableprop|#static{}dev_sdkforge_pdf_ui_PDFPageInfo$stableprop[0]
+
+final fun dev.sdkforge.pdf.ui/PDFRenderPageView(dev.sdkforge.pdf.ui/PDFPage?, androidx.compose.ui/Modifier?, androidx.compose.runtime/Composer?, kotlin/Int, kotlin/Int) // dev.sdkforge.pdf.ui/PDFRenderPageView|PDFRenderPageView(dev.sdkforge.pdf.ui.PDFPage?;androidx.compose.ui.Modifier?;androidx.compose.runtime.Composer?;kotlin.Int;kotlin.Int){}[0]
+final fun dev.sdkforge.pdf.ui/PDFRenderView(dev.sdkforge.pdf.ui/PDFDocument, androidx.compose.ui/Modifier?, androidx.compose.runtime/Composer?, kotlin/Int, kotlin/Int) // dev.sdkforge.pdf.ui/PDFRenderView|PDFRenderView(dev.sdkforge.pdf.ui.PDFDocument;androidx.compose.ui.Modifier?;androidx.compose.runtime.Composer?;kotlin.Int;kotlin.Int){}[0]
+final fun dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFDocument$stableprop_getter(): kotlin/Int // dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFDocument$stableprop_getter|dev_sdkforge_pdf_ui_PDFDocument$stableprop_getter(){}[0]
+final fun dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFPage$stableprop_getter(): kotlin/Int // dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFPage$stableprop_getter|dev_sdkforge_pdf_ui_PDFPage$stableprop_getter(){}[0]
+final fun dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFPageInfo$stableprop_getter(): kotlin/Int // dev.sdkforge.pdf.ui/dev_sdkforge_pdf_ui_PDFPageInfo$stableprop_getter|dev_sdkforge_pdf_ui_PDFPageInfo$stableprop_getter(){}[0]
